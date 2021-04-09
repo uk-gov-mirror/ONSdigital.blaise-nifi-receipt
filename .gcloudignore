@@ -1,0 +1,12 @@
+.git
+.gitignore
+.vscode
+__pycache__
+poetry.lock
+pyproject.toml
+tests
+.mypy.ini
+.pytest_cache
+.mypy_cache
+Makefile
+README.md
