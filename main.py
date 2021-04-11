@@ -10,7 +10,7 @@ from receipt import ReceiptProcessor
 
 def main(event: Dict, _context: Dict) -> None:
     print(f"Received event: {event}")
-    dds_client = blaise_dds.Client(blaise_dds.Config(URL=os.getenv("DDS_URL")))
+    dds_client = blaise_dds.Client(blaise_dds.Config.from_env())
     receipt_processor = ReceiptProcessor(dds_client)
     receipt = load_receipt(event)
     print(f"Receipt is: {receipt}")

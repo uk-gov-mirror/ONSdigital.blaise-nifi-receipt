@@ -10,3 +10,4 @@ tests
 .mypy_cache
 Makefile
 README.md
+test.py
