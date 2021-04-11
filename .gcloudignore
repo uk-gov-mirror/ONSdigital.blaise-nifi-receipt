@@ -11,3 +11,4 @@ tests
 Makefile
 README.md
 test.py
+.coveragerc
