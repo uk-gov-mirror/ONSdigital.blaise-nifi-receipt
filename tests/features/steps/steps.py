@@ -4,7 +4,7 @@ from behave import given, then, when
 
 
 @given("A receipt is published to pubsub by NiFi with a message")
-def receipt_published(context):
+def step_impl(context):
     context.receipt = json.loads(context.text)
 
 
