@@ -1,6 +1,6 @@
 import json
 
-from behave import given, when, then
+from behave import given, then, when
 
 
 @given("A receipt is published to pubsub by NiFi with a message")

@@ -7,7 +7,7 @@ authors = ["Sam Bryant <srbry@hotmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.13"
 requests = "^2.32.5"
-blaise-dds = {git = "https://github.com/ONSdigital/blaise-data-delivery-status-client.git", rev = "main"}
+blaise-dds = {git = "https://github.com/ONSdigital/blaise-data-delivery-status-client.git", rev = "v1"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4"
