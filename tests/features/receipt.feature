@@ -1,6 +1,6 @@
 Feature: Receipts
   Scenario: Successful receipts update the status as "in_arc"
-    Given A receipt is published to pubsub by NiFi with a message:
+    Given A receipt is published to pubsub by NiFi with a message
       """
       {
         "files": [
@@ -37,7 +37,7 @@ Feature: Receipts
     Then I update the data delivery status service with the state of "in_arc" for file "dd_OPN2101A_10032021_113048.zip"
 
   Scenario: Errored receipts update the status as "errored"
-    Given A receipt is published to pubsub by NiFi with a message:
+    Given A receipt is published to pubsub by NiFi with a message
       """
       {
         "iterationL3": "OPN",
