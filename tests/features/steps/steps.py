@@ -4,19 +4,19 @@ from behave import given, then, when
 
 
 @given("A receipt is published to pubsub by NiFi with a message")
-def step_impl(context):
+def given_receipt_published(context):
     context.receipt = json.loads(context.text)
 
 
 @when("The receipt is processed")
-def step_impl(context):
+def when_receipt_processed(context):
     context.receipt_processor.process_receipt(context.receipt)
 
 
 @then(
     'I update the data delivery status service with the state of "{state}" for file "{dd_filename}"'  # noqa: E501
 )
-def step_impl(context, state, dd_filename):
+def then_update_state_for_file(context, state, dd_filename):
     error_message = f"Expected update_state to be called with {state} for file {dd_filename} but was called with {context.mock_dds_client.update_calls}"  # noqa: E501
     assert len(context.mock_dds_client.update_calls) == 1, error_message
     assert context.mock_dds_client.update_calls[0] == {
@@ -27,7 +27,7 @@ def step_impl(context, state, dd_filename):
 
 
 @then("I update the data delivery status service with")
-def step_impl(context):
+def then_update_state_table(context):
     assert len(context.table.rows) == len(context.mock_dds_client.update_calls)
     for index, row in enumerate(context.table):
         actual_call = context.mock_dds_client.update_calls[index]
