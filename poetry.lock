@@ -87,7 +87,7 @@ requests = "^2.32.5"
 
 [package.source]
 type = "git"
-url = "https://github.com/ONSdigital/blaise-data-delivery-status-client.git"
+url = "https://github.com/ONSdigital/blaise-data-delivery-status-python-client.git"
 reference = "v1.0.1"
 resolved_reference = "3d0c8d345f8e5196deb0f5c5da800c5b9d399735"
 
@@ -891,4 +891,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.13"
-content-hash = "8aa4c346bfcee2b8608967d4aaf68d75d43feb3b251b989e62ebb18a015a9be5"
+content-hash = "39267aed8dfc67c33d8e78d641212e553d8ee3f8e4ea28295057d9ed871b64d3"
