@@ -4,7 +4,7 @@ package-mode = false
 [tool.poetry.dependencies]
 python = "^3.13"
 requests = "^2.32.5"
-blaise-dds = {git = "https://github.com/ONSdigital/blaise-data-delivery-status-client.git", rev = "v1.0.1"}
+blaise-dds = {git = "https://github.com/ONSdigital/blaise-data-delivery-status-client.git", tag = "v1.0.1"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.1"
